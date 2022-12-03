@@ -40,6 +40,10 @@
 
 </script>
 
+<svelte:head>
+    <title>Plcat</title>
+</svelte:head>
+
 <style>
     div.container {
         margin-top: 2%;

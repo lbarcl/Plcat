@@ -1,5 +1,20 @@
 <script lang="ts">
+  import { goto } from "$app/navigation";
     import user from "../userstore";
+
+    function exit() {
+        window.localStorage.clear();
+        goto("/");
+        user.set({
+            id: "id",
+            name: "name",
+            image: "url",
+            access_token: "access",
+            playlist_count: 0,
+            sellection: ""
+        });
+
+    }
 </script>
 
 <div class="box has-background-grey-darker mx-4">
@@ -16,6 +31,12 @@
 
         <div class="navbar-item">
             <p class="has-text-grey-light">{$user.playlist_count} Playlists</p>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <button class="button is-danger is-light" on:click={exit}>Exit</button>
+            </div>
         </div>
     </nav>
 </div>

@@ -28,3 +28,7 @@
     })
 
 </script>
+
+<svelte:head>
+    <title>Plcat | Spotify callback</title>
+</svelte:head>

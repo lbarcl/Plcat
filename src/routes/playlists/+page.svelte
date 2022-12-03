@@ -51,6 +51,10 @@
     
 </style>
 
+<svelte:head>
+    <title>Plcat | {$user.name} - Playlists</title>
+</svelte:head>
+
 <div class="container">
     <Header />
     <div class="box has-background-grey-darker has-text-white mx-4">

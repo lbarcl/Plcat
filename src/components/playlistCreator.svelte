@@ -7,8 +7,8 @@
     let sellection: string = $user.sellection;
     let onprocess = false;
     let isPrivate: any;
-    let title: String;
-    let description: String;
+    let title: string = "";
+    let description: string;
 
     async function createPlaylist() {
         if (!title) alert('There must be title');
@@ -78,6 +78,9 @@
     
 </script>
 
+<svelte:head>
+    <title>Plcat | {(title.length > 0) ? title : ""} Generate</title>
+</svelte:head>
 
 <div class="box has-background-grey-darker has-text-white mx-4">
     <div class="field">
