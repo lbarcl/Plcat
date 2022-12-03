@@ -1,7 +1,7 @@
 import { error, redirect } from '@sveltejs/kit';
  
 const client_id = "59727afbb3de43098e2e1e4a47ae736b";
-const redirect_uri = 'http://localhost:5173/callback';
+const redirect_uri = 'https://spoticat.tk/callback';
 const spotify_uri = "https://accounts.spotify.com/authorize";
 const scope = "ugc-image-upload playlist-read-private playlist-modify-private playlist-modify-public user-read-private user-library-read";
 
