@@ -15,10 +15,11 @@ export default async function (token: string): Promise<Array<formatedPlaylist>> 
     return pls;
 
     function formatPlaylist(pl: any): formatedPlaylist {
+        console.log(pl);
         return {
             id: pl.id,
             title: pl.name,
-            image: pl.images[0].url,
+            image: pl.images[0]?.url,
             tracks: pl.tracks.total,
             public: pl.public
         }

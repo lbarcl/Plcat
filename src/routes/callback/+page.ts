@@ -1,7 +1,7 @@
 /** @typedef {import('./$types').PageLoad} PageLoad */
 
 /** @type {PageLoad} */ 
-export function load({url}) {
+export function load({ url }) {
     var qparams = url.toString().split('#')[1].split('&');
     var s = "{"
 

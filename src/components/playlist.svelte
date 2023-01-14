@@ -40,7 +40,7 @@
         <div class="level-item">
             <figure class={mouseOn == true ? "image is-1by1 is-128x128" : "image is-1by1 is-64x64"}>
                 <!-- svelte-ignore a11y-img-redundant-alt -->
-                <img style="border-radius: 6px;" class="is-fullwidth " src={pl.image} alt={pl.title + "'s image"}>
+                <img style="border-radius: 6px;" class="is-fullwidth " src={pl.image != undefined ? pl.image : "https://bulma.io/images/placeholders/128x128.png"} alt={pl.title + "'s image"}>
             </figure>
         </div>
         <div class="level-item">
