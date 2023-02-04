@@ -1,7 +1,11 @@
 import sendGet from "./sendGet";
 
 export default async function (plid: string, token: string): Promise<Array<string>> {
-    var rs = await sendGet(`https://api.spotify.com/v1/playlists/${plid}/tracks?fields=next,items(track(uri))&limit=50`, token);
+    if (plid === 'saved') {
+        var rs = await sendGet(`https://api.spotify.com/v1/me/tracks?fields=next,items(uri)&limit=50`, token);
+    } else {
+        var rs = await sendGet(`https://api.spotify.com/v1/playlists/${plid}/tracks?fields=next,items(track(uri))&limit=50`, token);
+    }
     var next = rs?.next;
     var s = rs.items
 
