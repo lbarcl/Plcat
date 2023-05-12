@@ -1,38 +1,8 @@
-# create-svelte
+# What is Plcat
+Plcat is a tool that lets user combine their Spotify playlist into one big playlist.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## How to use Plcat
+When you enter the landing page there would be a button to authorize with Spotify (If you have authorized before it would be automatically send you to playlist maker).
 
-## Creating a project
+After authorization you will be redirected to playlist generator, at the playlist generator there would be all of your playlists as a list. You can choose the playlists you want to merge, when you choose a playlist it will turn to white. When you finished with choosing the lists you can press create and it will redirect you to generator page to edit details for new playlist when you are done you can press create button to finish the process and thats all.
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
